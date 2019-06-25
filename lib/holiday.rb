@@ -42,6 +42,10 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 
 holiday_hash[:spring][:memorial_day] << supply
 
+# OR new_array = holiday_hash[:spring].values.flatten
+# new_array << supply
+# holiday_hash[:spring][:memorial_day] = new_array
+
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
